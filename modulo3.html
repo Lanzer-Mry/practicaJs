@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //  Pedir al usuario que ingrese los valores de ancho altura y longitud
+        // let ancho=prompt("andres aguirre")
+        // let altura=prompt('Ingrese la altura de la caja')
+        // let longitud=prompt('Ingrese la longitud  de la caja')
+        // // Calcular el volumen de la caja
+        // const volumen= ancho*altura*longitud
+        // // Mostrar el resultado al usuario
+        // alert(`El volumen de la caja es ${volumen}`)
+
+
+        let contacts = [
+                {
+                name: "Maxwell Wrig",
+                phone: "(0191) 719 6495",
+                email: "Curabitur@nonummyac.co.uk"
+                }
+                , 
+                {
+                name: "Raja Villarreal",
+                phone: "0866 398 2895",
+                email: "posuere@sed.com"
+                },
+                 {
+                name: "Helen Richards",
+                phone: "0800 1111",
+                email: "libero@convallis.edu"
+                }
+
+            ];
+          
+            let newContact={
+             name:prompt('Ingrese el nombre del nuevo contacto'),
+             phone:prompt('Ingrese el nuemro de telefono del nuevo contacto'),
+             email:prompt('Ingrese  el email del nuevo contacto')
+        }
+        contacts.push(newContact)
+
+        console.log('Primer contacto',contacts[0])
+        console.log('Ultimo contacto',contacts[2])
+        console.log('Ultimo contacto',contacts[contacts.length -1]);
+        console.log(contacts);
+        console.table(contacts);
+
+       
+
+       
+        
+
+    </script>
+</body>
+</html>

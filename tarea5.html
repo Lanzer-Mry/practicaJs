@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let ticket={
+            from:"obrajes",
+            to:"sanPedro",
+            price:50
+        };
+        let persona={
+
+        };
+
+        console.log(ticket);
+        let firstname=prompt("ingrese su nombre");
+        let lastname=prompt("ingrese su apellido");
+
+        persona.nombre=firstname;
+        persona.apellido=lastname;
+        console.log(persona);
+        console.log(persona.nombre);console.log(persona.apellido);
+
+        let libro=[{titulo:"Speaking JavaScript", autor:"Axel Rauschmayer",nroPaginas:460},
+        {titulo:"Programming JavaScript Applications",autor:"Eric Elliott",nroPaginas:254},
+        {titulo:"Understanding ECMAScript 6",autor: "Nicholas C. Zakas",nroPaginas: 352}];
+        console.log("1 libro");
+        console.log(libro);
+        
+        let libroNuevo={titulo:"Learning JavaScript Design Patterns",autor:"Addy Osmani",nroPaginas:254};
+        
+        libro.push(libroNuevo);
+        console.log("Libro Ajuntado");
+        console.log(libro);
+        console.log("Tamaño del arreglo =  "+libro.length);
+
+        let nuevoArreglo=[];
+        nuevoArreglo=libro.slice(2,4);
+        console.log(nuevoArreglo);
+
+        nuevoArreglo.shift();
+        console.log(nuevoArreglo);
+
+        sumaTotal=libro[0].nroPaginas+libro[1].nroPaginas+libro[2].nroPaginas+libro[3].nroPaginas;
+        console.log(`La suma total de todas las paginas DEL PRIMER ARREGLO es : ${sumaTotal}`);
+
+       
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let numbers = [50, 10, 40, 30, 20];
+// function compareNumbers(a, b) {
+//     let retVal = 0;
+//     if (a < b) {
+//         retVal = -1;
+//     } else if(a > b) {
+//         retVal = 1;
+//     }
+//     return retVal;
+// }
+let sorted = numbers.sort((a,b)=>a-b)
+console.log(sorted);
+
+
+// [10, 20, 30, 40, 50]
+
+        let add=(x,y)=>
+        {
+            if(!Number.isInteger(x)||! Number.isInteger(y)){
+            return NaN
+            }
+             return x+y
+        }
+        console.log(add(4,5));
+            
+        let sub=(x,y)=>
+        {
+            if(!Number.isInteger(x)||! Number.isInteger(y)){
+            return NaN
+            }
+             return x-y
+        }
+        console.log(sub(4,5));
+
+        let mult=(x,y)=>
+        {
+            if(!Number.isInteger(x)||! Number.isInteger(y)){
+            return NaN
+            }
+             return x*y
+        }
+        console.log(mult(4,5));
+
+        let action=(callback,a,b)=>
+        {
+            return callback(a,b)
+        }
+        console.log("tarea 4 ")
+        console.log(action(add,4,5))
+        console.log(action(sub,4,5))
+        console.log(action(mult,4,5))
+        // console.log("tarea 5 ")
+        // let num=1;
+        // let intervalo=setInterval(()=>
+        // {   
+        //     console.log(num);
+        //     if (num==10) {
+        //     clearInterval(intervalo)
+        //     }else{
+        //         num++;
+        //     }
+        // },2000)
+        // program to display fibonacci sequence using recursion
+        // console.log("tarea 7")
+        // let fibo=(num)=> {
+        //     if(num < 2) {
+        //         return num;
+        //     }
+        //     else {
+        //         return fibo(num-1) + fibo(num - 2);
+        //     }
+        // }
+
+        // const number = prompt('ingrese el n-ésimo ');
+
+        // if(number <=0) {
+        //     console.log('Ingrese un numero positivo.');
+        // }
+        // else {
+        //         console.log(fibo(number));
+        // }
+
+
+        // var fibon = function(n) {
+
+        //         if (n <= 1) return n;
+
+        //         let x = 0;
+        //         let y = 1;
+        //         let aux = 0;
+
+        //         for (let i = 2; i<= n; i++) {
+        //             aux = y + x;
+        //             x = y;
+        //             y = aux;
+        //         }
+
+        //         return aux;
+        // };
+        // console.log(fibon(7));
+            
+        function addNewContact(contacts,contactsNuevo) {
+            if (contacts instanceof Array) {
+                contacts.push(contactsNuevo);
+            }
+        }
+            
+        
+        function showAllContacts(contacts) {
+                if (contacts instanceof Array) {
+                    contacts.forEach(element => {
+                        console.log(element.nombre)
+                        console.log(element.telefono)
+                    });
+                }
+            }
+
+            
+            
+        function swowContact(contacts,index) {
+                if (contacts instanceof Array && index<contacts.length) {
+                    let contacto=contacts[index];
+                    console.log(contacto.nombre);
+                    console.log(contacto.telefono);
+                    console.log(contacto
+                    );
+
+
+                }
+            }
+            contacts=[
+                {nombre:"andres",telefono:6987456},
+                {nombre:"jose",telefono:7987986},
+                {nombre:"daniel",telefono:2987986}
+            ];
+            console.log("mostrando: primero por indice")
+            swowContact(contacts,1)
+            console.log("mostrando: todos")
+
+            showAllContacts(contacts)
+            contactsNuevo=
+                {nombre:"david",telefono:7887456}
+            console.log("mostrando: aumentando")
+            
+            addNewContact(contacts,contactsNuevo);
+            console.log("mostrando: todos con el nuevo objeto")
+            showAllContacts(contacts)
+
+            let orden=contacts.sort((a,b)=>a-b);
+            console.log(orden)
+            telefono=[
+                "andres","aaaaaaa","4556","joseee","david"  
+            ];
+            let opcion=prompt("Ingrese la opcion")
+            switch (opcion) {
+            case "nombre":
+                let orden1=nombres.sort((a,b)=>a-b);
+                console.log(orden1);
+            case "telefono":
+                let orden2=telefono.sort((a,b)=>a-b);
+                console.log(orden2);
+            case "correo":
+                let orden3=correo.sort((a,b)=>a-b);
+                console.log(orden3);
+                break; 
+            default:
+                console.log('default')}
+
+                
+
+    </script>
+</body>
+</html>

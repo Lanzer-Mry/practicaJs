@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+        /*let i=prompt("ingrese el numero inicial");
+        let j=prompt("ingrese el numero final");
+        if(i>j){
+            while(i>=j){
+
+            console.log(i);
+            i-=10;
+            }
+        }else{
+            console.log("el dato inicial es menor que el dato final")
+        }
+
+        let arreglo=[21, 45, 100, 12, 11, 78, 61, 4, 39, 22];
+        console.log("Todo el arreglo");
+        
+        for (let i = 0; i < arreglo.length; i++) {
+
+            console.log(arreglo[i]);            
+        }
+        console.log("Numeros Pares");
+        for (let i = 0; i < arreglo.length; i++) {
+            if(arreglo[i]%2==0){
+                
+                console.log(arreglo[i]);            
+
+            }
+        }
+        console.log("Numeros mayores a 10 pero menor que 60");
+        for (let i = 0; i < arreglo.length; i++) {
+            if (arreglo[i]>10 && arreglo[i]<60) {
+                console.log(arreglo[i]);            
+            }
+        }*/
+        // let nombre=prompt("Ingrese el titulo de la pelicula"); 
+        // let apellido=prompt("Ingrese el titulo de la pelicula"); 
+        // let vector=[];
+        // objeto={};
+        //objeto.nombre=nombre;
+        //objeto.apellido=apellido;
+        //vector.push(objeto);
+        // console.log(objeto);
+        // console.log(vector);
+        console.log("modulo 4");
+        console.log("********************************");
+    //     let arreglo=[];
+        
+    //    let titulo,imdb
+    //     while(true){
+
+    //        pelicula={
+    //             nombre:prompt("Ingrese el titulo de la pelicula"),
+    //             calificacion:prompt("Ingrese ña cañificacion de la pelicula")
+    //         };
+    //         if (pelicula.nombre==null || pelicula.calificacion==null) {
+    //             break;
+    //         }
+    //         arreglo.push(pelicula);
+             
+    //     };
+    //     console.log(arreglo);
+    //     for (let index = 0; index < arreglo.length; index++) {
+    //          if (arreglo[index].calificacion<7) {
+    //             console.log(arreglo[index]);
+    //         };
+    //     }
+    //     for (let index = 0; index < arreglo.length; index++) {
+    //          if (arreglo[index].calificacion>7) {
+    //             console.log(arreglo[index]);
+    //         };
+    //     }
+    // let vessel = {  LATITUD : 40.07288,
+    //                 LONGITUD : 154.48535,
+    //                 CURSO : 285.6,
+    //                 VELOCIDAD : 14.0,
+    //                 OMI : 9175717,
+    //                 NOMBRE : "MARENO"
+    // }
+    // for( let key in vessel) {
+    //     console.log(`${key} -> ${vessel[key]}`);
+    // }
+        
+    let contacts = [
+                {
+                name: "Maxwell Wrig",
+                phone: "(0191) 719 6495",
+                email: "Curabitur@nonummyac.co.uk"
+                }
+                , 
+                {
+                name: "Raja Villarreal",
+                phone: "0866 398 2895",
+                email: "posuere@sed.com"
+                },
+                 {
+                name: "Helen Richards",
+                phone: "0800 1111",
+                email: "libero@convallis.edu"
+                }
+
+            ];
+            let salir='entra';
+        while (salir!='salir') {
+            sw=prompt("Ingrese que es lo que quiere que se muestre sobre los contactos");
+            salir=sw;
+            switch (sw) {
+                case 'primero':
+                        console.log("Primer contacto del arreglo");
+                        mostrarPrimerContacto(contacts);
+                    break;
+                    case 'ultimo':
+                        console.log("Ultimo contacto del arreglo");
+                        mostrarUltimoContacto(contacts);
+                    break;
+                    case 'todos':
+                        console.log("todos los contactos del arreglo");
+                        mostrarTodosContactos(contacts);
+                    break;
+                    case 'nuevo':
+                        console.log("nuevo contacto en el arreglo");
+                        añadirNuevoContacto(contacts);
+                    break;
+                default:
+                    break;
+            }
+        }
+       function mostrarPrimerContacto(contactos) {
+        console.log(contactos[0]);
+       }
+       function mostrarUltimoContacto(contactos) {
+        console.log(contactos[contactos.length-1])
+       }
+       function mostrarTodosContactos(contactos) {
+        for (let index = 0; index < contactos.length; index++) {
+            console.log(contactos[index]);
+        }
+       }
+       function añadirNuevoContacto(contactos) {
+        let newContact={
+             name:prompt('Ingrese el nombre del nuevo contacto'),
+             phone:prompt('Ingrese el nuemro de telefono del nuevo contacto'),
+             email:prompt('Ingrese  el email del nuevo contacto')
+        }
+        contactos.push(newContact);
+        return contactos;
+       };
+        
+    
+    </script>
+</body>
+</html>
